@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Amazon-like global styles */
+body {
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  background-color: #eaeded;
+  margin: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+
+/* Slick carousel overrides */
+.slick-prev, .slick-next { z-index: 10; width: 40px; height: 80px; }
+.slick-prev { left: 0; }
+.slick-next { right: 0; }
+.slick-prev:before, .slick-next:before { font-size: 30px; }
