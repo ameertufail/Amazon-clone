@@ -1,0 +1,15 @@
+{
+  "name": "amazon-clone",
+  "version": "1.0.0",
+  "description": "Full-stack Amazon.in Clone",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
